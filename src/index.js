@@ -30,3 +30,7 @@ function isHappy(number, maxIteration = 100) {
 
   return sum === 1 ? "Feliz" : isHappy(sum, maxIteration - 1);
 }
+
+function isHappyAndLucky(number) {
+  return "Número " + isLucky(number) + " e " + isHappy(number);
+}
