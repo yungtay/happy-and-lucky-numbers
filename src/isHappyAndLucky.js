@@ -1,6 +1,12 @@
-import isLucky from './isLucky.js';
-import isHappy from './isHappy.js'
+import isLucky from "./isLucky.js";
+import isHappy from "./isHappy.js";
 
 export default function isHappyAndLucky(number) {
-  return "Número " + isLucky(number) + " e " + isHappy(number);
+  if (!Number.isInteger(number)) return "Não é um número inteiro";
+
+  const isLuckyNumber = isLucky(number)
+  const isHappyNumber = isHappy(number)
+
+  return "Número " + isLuckyNumber + " e " + isHappyNumber
+
 }

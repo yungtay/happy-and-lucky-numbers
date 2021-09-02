@@ -23,3 +23,11 @@ test("The function should return 'Número Sortudo e Não-Feliz' when evaluating 
 test("The function should return 'Número Não-Sortudo e Feliz' when evaluating the number 100", () => {
   expect(isHappyAndLucky(100)).toBe("Número Não-Sortudo e Feliz");
 });
+
+test("The function should return 'Não é um número inteiro' when evaluating a string", () => {
+  expect(isHappyAndLucky('Wrong Input')).toBe("Não é um número inteiro");
+});
+
+test("The function should return 'Não é um número inteiro' when evaluating a float", () => {
+  expect(isHappyAndLucky(1.57)).toBe("Não é um número inteiro");
+});

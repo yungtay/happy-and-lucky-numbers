@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest -i",
-    "start": "node src/isHappyAndLucky.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
     "@babel/preset-env": "^7.15.0",
     "babel-jest": "^27.1.0",
     "jest": "^27.1.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
